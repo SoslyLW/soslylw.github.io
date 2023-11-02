@@ -10,7 +10,7 @@ function setup() {
   sw = (cw / desk.width) * desk.width;
   sh = (ch / desk.height) * desk.height;
   randLights();
-  setInterval(randLights, 10000);
+  setInterval(randLights, 4500);
 }
 
 function displayLight() {
@@ -58,7 +58,6 @@ class Shape{
         stroke(183, 153, 255, this.a);
       }
       this.a = this.a - 4;
-      //stroke(255, 186, 134, this.a);
       strokeWeight(this.weight);
       if (this.a > 10){
         line(this.x, this.y, this.px, this.py);
