@@ -250,6 +250,26 @@ h4{
   color: #ACBCFF;
 }
 
+.projects h3 a{
+  color: #ACBCFF;
+}
+
+.projects li {
+  display: grid;
+  place-items: center;
+  width: max-content;
+  border-radius: 12px;
+  position: relative;
+  font-family: 'Secular One', sans-serif;
+  font-size: 18px;
+  /* color: #272829; */
+  font-weight: normal;
+
+  a {
+    border-radius: inherit;
+  }
+}
+
 @keyframes bounceUp {
   from {
     opacity: 0.7;
