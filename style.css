@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+:root {
+  --sari_light_blue: #e6fffd;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -258,15 +262,85 @@ h4{
   display: grid;
   place-items: center;
   width: max-content;
-  border-radius: 12px;
+  border: 2px solid #FFF6E0;
+  border-radius: 8px;
   position: relative;
   font-family: 'Secular One', sans-serif;
   font-size: 18px;
-  /* color: #272829; */
+  color: #FFF6E0;
   font-weight: normal;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
 
-  a {
-    border-radius: inherit;
+  &:hover {
+    background-color: #FFF6E0;
+    color: #272829;
+    transition: background-color linear 0.3s;
+  }
+}
+
+.projects i {
+  font-size: 20px;
+}
+
+.projects ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.skills {
+  background-color: #BCE8FF;
+  font-family: 'Secular One', sans-serif;
+  padding: 10vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  & h1 {
+    color: #272829;
+  }
+  
+  & h3 {
+    color: #272829;
+  }
+
+  & ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  & li {
+    display: grid;
+    place-items: center;
+    width: max-content;
+    border: 2px solid #272829;
+    border-radius: 8px;
+    position: relative;
+    font-size: 18px;
+    color: #272829;
+    font-weight: normal;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: #272829;
+      color: #BCE8FF;
+      transition: background-color linear 0.3s;
+    }
   }
 }
 
