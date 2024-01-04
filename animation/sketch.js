@@ -13,6 +13,22 @@ function setup() {
   setInterval(randLights, 4500);
 }
 
+function windowResized() {
+  // Get new window dimensions
+  cw = window.innerWidth;
+  ch = window.innerHeight; 
+
+  // Rerun setup without creating more lights
+  canvas = createCanvas(cw,ch);
+  background(0);
+  shapes = [];
+  // Need to reload images or else lower resolution version is used
+  desk = loadImage('deskoutline1.png');
+  light = loadImage('deskoutline2.png');
+  sw = (cw / desk.width) * desk.width;
+  sh = (ch / desk.height) * desk.height;
+}
+
 function displayLight() {
     x = random(0, cw);
     y = random(0, ch);
